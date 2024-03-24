@@ -2,6 +2,8 @@ package com.template.kiChai.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class consumer {
@@ -15,6 +17,9 @@ public class consumer {
     String city;
     int postCode;
     String profilePic;
+
+    @OneToMany
+    List<callOut> callOuts;
 
 
     public consumer(){
