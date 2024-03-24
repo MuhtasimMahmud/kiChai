@@ -51,8 +51,9 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http)throws Exception{
 
-        http.authorizeHttpRequests().antMatchers("/user/**").hasRole("USER")
-                .antMatchers("/admin/**").hasRole("ADMIN")
+        http.authorizeHttpRequests().antMatchers("/consumer/**").hasRole("CONSUMER")
+                .antMatchers("/specialist/**").hasRole("SPECIALIST")
+                .antMatchers("/vendor/**").hasRole("VENDOR")
                 .and().formLogin()
                 .loginPage("/signin")
                 .loginProcessingUrl("/dologin")
