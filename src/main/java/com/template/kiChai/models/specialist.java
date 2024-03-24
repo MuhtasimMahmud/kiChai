@@ -17,6 +17,11 @@ public class specialist {
     String profilePic;
     String emergency;
 
+
+    public specialist(){
+        //Default Constructor
+    }
+
     public specialist(int specialistID, String firstName, String lastName, String phone, String email, String city, int postCode, String profilePic, String emergency) {
         this.specialistID = specialistID;
         this.firstName = firstName;
