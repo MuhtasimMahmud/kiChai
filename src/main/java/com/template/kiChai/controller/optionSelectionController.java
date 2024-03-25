@@ -21,7 +21,7 @@ public class optionSelectionController {
         if(option.equals("Customer")){
             return "customer/customerSignUp";
         } else if (option.equals("Specialist")) {
-            return "specialist/signUp/specialistSignUpBase";
+            return "specialist/signUp/signUpStep1";
         }else{
             return "vendor/vendorSignUp";
         }

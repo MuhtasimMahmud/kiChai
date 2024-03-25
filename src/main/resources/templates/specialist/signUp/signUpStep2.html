@@ -20,54 +20,40 @@
         </div>
 
         <div class="basicInfo mb-5">
-            <h4 class="greenText"> Basic information </h4>
+            <h4 class="greenText"> Additional information </h4>
         </div>
 
         <form th:action="@{/static}">
             <div class="row gy-3 overflow-hidden">
 
-                <div class="row col-12">
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="First Name" id="firstName" name="firstName" />
-                    </div>
-
-                    <div class="col-2"></div>
-
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="Last Name" id="lastName" name="lastName" />
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="file" placeholder="Upload Your picture #1" id="profilePic" name="profilePic" />
                     </div>
                 </div>
 
                 <div class="col-12">
                     <div class="input-field">
-                        <input type="email" placeholder="E-mail" id="email" name="email" />
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="input-field">
-                        <input type="password" placeholder="Password" id="password" name="password" />
+                        <input type="file" placeholder="Upload Your NID Front Page #2" id="nidFront" name="nidFront" />
                     </div>
                 </div>
 
 
                 <div class="col-12">
                     <div class="input-field">
-                        <input type="password" placeholder="Re-type Password" id="retype-password" name="retypePassword" />
+                        <input type="file" placeholder="Upload Your NID Back Page #3" id="nidBack" name="nidBack" />
                     </div>
                 </div>
 
-                <div> </div>
-
-                <div class="row col-12">
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="City" id="city" name="city" />
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="text" placeholder="Write about yourself" id="about" name="about" />
                     </div>
+                </div>
 
-                    <div class="col-2"></div>
-
-                    <div class="input-field col-5">
-                        <input type="number" placeholder="Post Code" id="postCode" name="postCode" />
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="text" placeholder="Per Hour Rate" id="rate" name="rate" />
                     </div>
                 </div>
 

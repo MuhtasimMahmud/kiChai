@@ -20,54 +20,89 @@
         </div>
 
         <div class="basicInfo mb-5">
-            <h4 class="greenText"> Basic information </h4>
+            <h4 class="greenText"> Interests </h4>
         </div>
 
         <form th:action="@{/static}">
             <div class="row gy-3 overflow-hidden">
 
-                <div class="row col-12">
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="First Name" id="firstName" name="firstName" />
+                <div class="box">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="plumber" name="Option" id="plumber">
+                            <label class="form-check-label" for="plumber">
+                                Plumber
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="col-2"></div>
-
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="Last Name" id="lastName" name="lastName" />
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="technician" name="Option" id="technician">
+                            <label class="form-check-label" for="technician">
+                                Technician
+                            </label>
+                        </div>
                     </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="electrician" name="Option" id="electrician">
+                            <label class="form-check-label" for="electrician">
+                                Electrician
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="mechanic" name="Option" id="mechanic">
+                            <label class="form-check-label" for="mechanic">
+                                Mechanic
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="furnitureAssembly" name="Option" id="furnitureAssembly">
+                            <label class="form-check-label" for="furnitureAssembly">
+                                Furniture Assembly
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" value="movingHelp" name="Option" id="movingHelp">
+                            <label class="form-check-label" for="movingHelp">
+                                Moving Help
+                            </label>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
+
+                <div></div>
 
                 <div class="col-12">
-                    <div class="input-field">
-                        <input type="email" placeholder="E-mail" id="email" name="email" />
-                    </div>
-                </div>
+                    <div class="form-check">
+                        <input class="form-check-input checkbox" type="checkbox" value="emergencyService" name="emergencyService" id="emergencyService">
+                        <label class="form-check-label" for="emergencyService">
+                            Can you Provide Emergency Service
+                        </label>
 
-                <div class="col-12">
-                    <div class="input-field">
-                        <input type="password" placeholder="Password" id="password" name="password" />
-                    </div>
-                </div>
+                        <!-- Info icon -->
+                        <div class="info-icon" th:onclick="'showToaster();'">i</div>
+
+                        <!-- Toaster container -->
+                        <div id="toaster" class="toaster-container"></div>
 
 
-                <div class="col-12">
-                    <div class="input-field">
-                        <input type="password" placeholder="Re-type Password" id="retype-password" name="retypePassword" />
-                    </div>
-                </div>
-
-                <div> </div>
-
-                <div class="row col-12">
-                    <div class="input-field col-5">
-                        <input type="text" placeholder="City" id="city" name="city" />
-                    </div>
-
-                    <div class="col-2"></div>
-
-                    <div class="input-field col-5">
-                        <input type="number" placeholder="Post Code" id="postCode" name="postCode" />
                     </div>
                 </div>
 
@@ -75,12 +110,15 @@
 
                 <div class="col-12">
                     <div class="d-grid continue_btn">
-                        <button class="btn btn-lg" type="submit">Continue</button>
+                        <button class="btn btn-lg" type="submit"> Submit </button>
                     </div>
                 </div>
+
             </div>
         </form>
 
     </section>
+
+
 </body>
 </html>

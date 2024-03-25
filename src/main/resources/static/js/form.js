@@ -1,4 +1,6 @@
 
+/////////// Option Selection Page JS /////////////////////
+
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
 // Add event listener to each checkbox
@@ -22,3 +24,6 @@ form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
     }
 });
+
+
+
