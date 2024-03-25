@@ -17,7 +17,7 @@
 <body>
 
     <!-- Registration 8 - Bootstrap Brain Component -->
-    <section class="p-3 p-md-4 p-xl-5 mt-5">
+    <section class="p-3 p-md-4 p-xl-5 mt-3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-xxl-11">
@@ -34,21 +34,27 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="mb-5">
-                                                    <div class="text-center mb-0">
+                                                    <div class="text-center mb-3">
                                                         <a href="#!">
                                                             <img class="logo" th:src="@{/images/ki chai.png}" alt="Logo">
                                                         </a>
                                                     </div>
 
                                                     <div>
-                                                        <!-- eikhane options gula thakbe 1-2-3   -->
-                                                    </div>
-
-                                                    <div>
-                                                        <h3> Basic information </h3>
+                                                        <div class="circle-container mb-4">
+                                                            <div class="circle">1</div>
+                                                            <div class="connector"></div>
+                                                            <div class="circle">2</div>
+                                                            <div class="connector"></div>
+                                                            <div class="circle">3</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+
+                                        <div class="basicInfo mb-5">
+                                            <h4 class="greenText"> Basic information </h4>
                                         </div>
 
                                         <form th:action="@{/}">
@@ -85,7 +91,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div></div>
+                                                <div> </div>
 
                                                 <div class="row col-12">
                                                     <div class="input-field col-5">
@@ -115,6 +121,8 @@
                                                 <p class="mb-0 mt-5 text-secondary text-center">Already have an account? <a href="#!" class="link-primary text-decoration-none">Sign in</a></p>
                                             </div>
                                         </div>
+
+
                                     </div>
                                 </div>
                             </div>

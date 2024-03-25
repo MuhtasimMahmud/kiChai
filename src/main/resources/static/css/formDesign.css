@@ -2,7 +2,7 @@ body{
     background-color: #F8F9FA;
 }
 
-.welcomeText{
+.greenText{
     color: #2A6B53;
 }
 
@@ -43,4 +43,32 @@ input {
     outline: none;
 }
 
+
+.basicInfo .greenText{
+    font-weight: 450;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid #F6CB3D;
+
+}
+.connector {
+    flex: 1;
+    height: 2px;
+    background-color: #F6CB3D;
+}
 
