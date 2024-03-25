@@ -64,8 +64,9 @@ input {
     align-items: center;
     font-size: 20px;
     border: 2px solid #F6CB3D;
-
+    font-weight: 550;
 }
+
 .connector {
     flex: 1;
     height: 2px;

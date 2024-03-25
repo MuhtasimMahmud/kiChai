@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="specialist/signUp/specialistSignUpBase::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <div class="circle-container mb-4">
+                <div class="circle" style="background-color: #F6CB3D; !important;">1</div>
+                <div class="connector"></div>
+                <div class="circle" style="background-color: #F6CB3D; !important;">2</div>
+                <div class="connector"></div>
+                <div class="circle" style="background-color: #F6CB3D; !important;">3</div>
+            </div>
+        </div>
+
+        <div class="basicInfo mb-5">
+            <h4 class="greenText"> Basic information </h4>
+        </div>
+
+        <form th:action="@{/static}">
+            <div class="row gy-3 overflow-hidden">
+
+                <div class="row col-12">
+                    <div class="input-field col-5">
+                        <input type="text" placeholder="First Name" id="firstName" name="firstName" />
+                    </div>
+
+                    <div class="col-2"></div>
+
+                    <div class="input-field col-5">
+                        <input type="text" placeholder="Last Name" id="lastName" name="lastName" />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="email" placeholder="E-mail" id="email" name="email" />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" id="password" name="password" />
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class="input-field">
+                        <input type="password" placeholder="Re-type Password" id="retype-password" name="retypePassword" />
+                    </div>
+                </div>
+
+                <div> </div>
+
+                <div class="row col-12">
+                    <div class="input-field col-5">
+                        <input type="text" placeholder="City" id="city" name="city" />
+                    </div>
+
+                    <div class="col-2"></div>
+
+                    <div class="input-field col-5">
+                        <input type="number" placeholder="Post Code" id="postCode" name="postCode" />
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="col-12">
+                    <div class="d-grid continue_btn">
+                        <button class="btn btn-lg" type="submit">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class signUpController {
+public class optionSelectionController {
 
 
     @GetMapping("/selectionPage")
@@ -21,7 +21,7 @@ public class signUpController {
         if(option.equals("Customer")){
             return "customer/customerSignUp";
         } else if (option.equals("Specialist")) {
-            return "specialist/specialistSignUp";
+            return "specialist/signUp/specialistSignUpBase";
         }else{
             return "vendor/vendorSignUp";
         }
