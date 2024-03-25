@@ -43,12 +43,12 @@
                                             </div>
                                         </div>
 
-                                        <form action="#!">
+                                        <form th:action="@{/selectedOption}">
                                             <div class="row gy-3 overflow-hidden">
 
                                                 <div class="col-12">
                                                     <div class="form-check">
-                                                        <input class="form-check-input checkbox" type="checkbox" value="" name="Customer" id="Customer" required>
+                                                        <input class="form-check-input checkbox" type="checkbox" value="Customer" name="Option" id="Customer">
                                                         <label class="form-check-label" for="Customer">
                                                             Customer
                                                         </label>
@@ -57,7 +57,7 @@
 
                                                 <div class="col-12">
                                                     <div class="form-check">
-                                                        <input class="form-check-input checkbox" type="checkbox" value="" name="Customer" id="Vendor" required>
+                                                        <input class="form-check-input checkbox" type="checkbox" value="Vendor" name="Option" id="Vendor">
                                                         <label class="form-check-label" for="Vendor">
                                                             Vendor
                                                         </label>
@@ -66,7 +66,7 @@
 
                                                 <div class="col-12 mb-4">
                                                     <div class="form-check">
-                                                        <input class="form-check-input checkbox" type="checkbox" value="" name="Customer" id="Specialist" required>
+                                                        <input class="form-check-input checkbox" type="checkbox" value="Specialist" name="Option" id="Specialist">
                                                         <label class="form-check-label" for="Specialist">
                                                             Specialist
                                                         </label>
